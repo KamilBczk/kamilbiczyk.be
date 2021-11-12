@@ -1,4 +1,4 @@
-<?php $ABOUT = "active";?>
+<?php $CONTACT = "active";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
