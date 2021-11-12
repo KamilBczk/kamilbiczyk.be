@@ -44,7 +44,7 @@ body, html {
     margin: 70px 0;
 }
 
-/* index.html */
+/* index.php */
 
 .content-info {
     position: absolute;
@@ -183,4 +183,58 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     transition: var(--transition-medium);
+}
+
+/* contact.php */
+
+.container .container-contact-form {
+    padding: 50px 0 10px;
+}
+
+.container .container-contact-form p {
+    position: relative;
+    font-size: 25px;
+    line-height: 70px;
+    color: var(--color-black);
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.container .container-contact-form input {
+    margin: 0 10px;
+    font-size: 23px;
+    outline: 0;
+    padding: 5px;
+    border: 0;
+    position: relative;
+    border-bottom: 1px solid var(--color-black);
+    color: var(--color-blue);
+    transition: var(--transition-medium);
+}
+
+.container .container-contact-form input:focus {
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.container .container-contact-form .input {
+    display: inline-block;
+    position: relative;
+}
+
+.container .container-contact-form .contact-form-btn-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    cursor: pointer;
+    height : 0;
+    width : 0;
+    border-top : 13px solid var(--color-black);
+    border-right : 8px solid transparent;
+    border-left : 8px solid transparent;
+    transition: var(--transition-medium);
+}
+
+.container .container-contact-form .contact-form-btn-arrow:hover {
+    border-top : 13px solid var(--color-blue);
 }
