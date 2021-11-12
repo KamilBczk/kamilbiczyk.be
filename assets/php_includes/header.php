@@ -10,10 +10,10 @@
         </div>
         <nav class="top_nav">
             <ul>
-                <li><a href="#" class="active">accueil</a></li>
-                <li><a href="#">à propos</a></li>
-                <li><a href="#">travaux</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php" <?php if (isset($INDEX)) {echo "class=active";}?>>accueil</a></li>
+                <li><a href="about.php" <?php if (isset($ABOUT)) {echo "class=active";}?>>à propos</a></li>
+                <li><a href="#" <?php if (isset($WORKS)) {echo "class=active";}?>>travaux</a></li>
+                <li><a href="contact.php" <?php if (isset($CONTACT)) {echo "class=active";}?>>Contact</a></li>
             </ul>
         </nav>
         <div class="blob">

@@ -1,19 +1,20 @@
 $(".btn-blob").click(function () {
+    $(".btn-blob").toggleClass("btn-blob-active");
     $(".blob").toggleClass("blob-active");
     if ($(".blob").hasClass("blob-active")) {
         let nbBlobBtn = document.getElementsByClassName("blob-btn");
-        var i = nbBlobBtn.length - 1;
+        var i = nbBlobBtn.length;
         $('.blob-btn').css("display", "block");
-
         function myLoop() {
         setTimeout(function() {
-            nbBlobBtn[i].style.opacity = "1";
-            console.log("d");
+            if (!(nbBlobBtn[i] === undefined)) {
+                nbBlobBtn[i].style.opacity = "1";
+            }
             i--;
             if (i >= 0) {
             myLoop();
             }
-        }, 200)}
+        }, 150)}
         myLoop();  
     }
     else {

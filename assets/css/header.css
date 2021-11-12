@@ -82,7 +82,7 @@
     text-transform: capitalize;
     color: var(--color-dark-grey);
     transition: var(--transition-medium);
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
 }
 
@@ -180,7 +180,34 @@
 }
 
 .header_top .btn-blob:hover {
-    height: 47px;
-    width: 47px;
+    transform: translate(50%, -50%) scale(0.95);
     background-color: var(--color-light-grey);
+}
+
+.header_top .btn-blob::after, .header_top .btn-blob::before {
+    width: 5px;
+    height: 25px;
+    border-radius: 2.5px;
+    background-color: var(--color-blue);
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: var(--transition-medium);
+}
+
+.header_top .btn-blob::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.header_top .btn-blob::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.header_top .btn-blob-active::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header_top .btn-blob-active::before {
+    transform: translate(-50%, -50%) rotate(135deg);
 }
