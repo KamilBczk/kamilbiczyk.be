@@ -1,5 +1,9 @@
 /* header */
 
+.header_top {
+    overflow: hidden;
+}
+
 .header_top header {
     position: relative;
     display: flex;
