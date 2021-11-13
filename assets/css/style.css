@@ -326,13 +326,22 @@ body, html {
     transition: var(--transition-medium);
 }
 
+.container .checkbox p.red-p {
+    color: var(--color-red);
+}
+
 .container .checkbox p.checkbox-active-p {
     color: var(--color-dark-grey);
+}
+
+.container .checkbox p.green-p {
+    color: var(--color-green);
 }
 
 .container .container-contact-button {
     width: 180px;
     height: 50px;
+    margin-top: 35px;
 }
 
 .container .container-contact-button button {
@@ -347,6 +356,14 @@ body, html {
     outline: 0;
     transition: var(--transition-medium);
     position: relative;
+}
+
+.container .container-contact-button button.green-btn {
+    background-color: var(--color-green);
+}
+
+.container .container-contact-button button.red-btn {
+    background-color: var(--color-red);
 }
 
 .container .container-contact-button button p {
@@ -389,7 +406,6 @@ body, html {
 
 .container .container-contact-button button:hover {
     border-radius: 15px;
-    background-color: var(--color-second-blue);
 }
 
 .container .container-contact-button button:hover p {
