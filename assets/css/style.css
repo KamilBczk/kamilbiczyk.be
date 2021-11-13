@@ -142,30 +142,53 @@ body, html {
 /* about.php */
 
 .container-title-text-bold-left {
-    position: relative;
-    display: block;
     width: fit-content;
 }
 
-.container-title-text-bold-left h2 {
+.container-title-text-bold-left, .container-title-text-bold-right {
+    position: relative;
+    display: block;
+    padding-top: 100px;
+}
+
+.container-title-text-bold-left:nth-child(1) {
+    padding-top: 0;
+}
+
+.container-title-text-bold-left h2, .container-title-text-bold-right h2 {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 900;
     text-align: right;
 }
 
-.container-item-desc-sep {
+.container-title-text-bold-right {
+    width: auto;
+}
+
+.container-title-text-bold-right h2 {
+    text-align: center;
+}
+
+.container-item-desc-sep, .container-item-desc-sep-right {
     position: relative;
     padding: 40px 0;
 }
 
-.container-item-desc-sep p {
-    margin-left: 20%;
+.container-item-desc-sep p, .container-item-desc-sep-right p {
+    margin-left: 15%;
     padding: 40px 0 40px 60px;
     border-left: 2px solid var(--color-light-grey);
     color: var(--color-dark-grey);
     font-size: 17px;
     line-height: 25px;
+}
+
+.container-item-desc-sep-right p {
+    border-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 40px 0 40px 0;
 }
 
 .container-item-img-100pr {
