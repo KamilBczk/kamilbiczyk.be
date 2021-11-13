@@ -22,6 +22,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <!-- main.js -->
+    <script src="/assets/js/main.js" defer></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/1dda56443c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php
