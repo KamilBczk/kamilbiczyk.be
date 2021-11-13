@@ -235,6 +235,69 @@ body, html {
     transition: var(--transition-medium);
 }
 
+.container .container-contact-form .contact-form-btn-arrow-active {
+    transform: translateY(-50%) rotate(180deg);
+}
+
 .container .container-contact-form .contact-form-btn-arrow:hover {
     border-top : 13px solid var(--color-blue);
+}
+
+.container .container-contact-form .container-contact-li {
+    position: absolute;
+    width: 100%;
+}
+
+.container .container-contact-form .container-contact-li ul {
+    display: block;
+    text-align: center;
+    background-color: var(--color-white);
+    color: var(--color-medium-grey);
+    font-size: 23px;
+    padding-top: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition-medium);
+}
+
+.container .container-contact-form .container-contact-li-active ul {
+    height: 110px;
+}
+
+.container .container-contact-form .container-contact-li ul li {
+    padding: 5px 0;
+    cursor: pointer;
+    transition: var(--transition-medium);
+}
+
+.container .container-contact-form .container-contact-li ul li:hover {
+    color: var(--color-blue);
+}
+
+.container .checkbox {
+    position: relative;
+    margin-top: 30px;
+}
+
+.container .checkbox .checkbox_square {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 6px;
+    float: left;
+    transition: var(--transition-medium);
+    cursor: pointer;
+}
+
+.container .checkbox .checkbox_square-active {
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
+
+.container .checkbox p {
+    font-size: 15px;
+    line-height: 29px;
+    margin-left: 10px;
+    cursor: pointer;
 }
