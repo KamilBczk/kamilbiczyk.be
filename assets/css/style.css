@@ -8,6 +8,8 @@
     --color-medium-grey: #b5b5b5;
     --color-dark-grey: #666666;
     --color-black: #000000;
+    --color-red: rgb(209, 17, 65);
+    --color-green: rgb(0, 177, 89);
 
     --transition-medium: .33s;
     --transition-slow: .50s;
@@ -212,6 +214,14 @@ body, html {
     transition: var(--transition-medium);
 }
 
+.container .container-contact-form input.red-input {
+    border-bottom: 1px solid var(--color-red);
+}
+
+.container .container-contact-form input.green-input {
+    border-bottom: 1px solid var(--color-green);
+}
+
 .container .container-contact-form input:focus {
     border-bottom: 1px solid var(--color-blue);
 }
@@ -290,9 +300,22 @@ body, html {
     cursor: pointer;
 }
 
+.container .checkbox .checkbox_square .checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: var(--transition-medium);
+    color: var(--color-white);
+}
+
 .container .checkbox .checkbox_square-active {
     background-color: var(--color-blue);
     border: 1px solid var(--color-blue);
+}
+
+.container .checkbox .checkbox_square-active .checkbox-icon {
+    transform: translate(-50%, -50%) rotate(360deg);
 }
 
 .container .checkbox p {
@@ -300,4 +323,79 @@ body, html {
     line-height: 29px;
     margin-left: 10px;
     cursor: pointer;
+    transition: var(--transition-medium);
+}
+
+.container .checkbox p.checkbox-active-p {
+    color: var(--color-dark-grey);
+}
+
+.container .container-contact-button {
+    width: 180px;
+    height: 50px;
+}
+
+.container .container-contact-button button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-blue);
+    border: 0;
+    color: var(--color-white);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: 0;
+    transition: var(--transition-medium);
+    position: relative;
+}
+
+.container .container-contact-button button p {
+    font-size: 13px;
+    color: var(--color-white);
+    line-height: 40px;
+    transition: var(--transition-medium);
+    overflow: hidden;
+    width: fit-content;
+}
+
+.container .container-contact-button button .icon {
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 80%;
+    transition: var(--transition-slow);
+}
+
+.container .container-contact-button button .icon-animation {
+    animation: spinner-i 5s linear infinite;
+}
+
+.container .container-contact-button button .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spinner-i {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) ;
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) ;
+    }
+}
+
+.container .container-contact-button button:hover {
+    border-radius: 15px;
+    background-color: var(--color-second-blue);
+}
+
+.container .container-contact-button button:hover p {
+    width: 0;
+}
+
+.container .container-contact-button button:hover .icon {
+    left: 50%;
 }
